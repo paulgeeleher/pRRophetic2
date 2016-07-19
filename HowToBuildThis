@@ -1,0 +1,11 @@
+We need to use the package "devtools".
+library("devtools")
+
+Naviage to the directory of the package:
+setwd("~/postdoc_stuff/HDAC_project/Scripts/r_package_files/pRRophetic2")
+check() # to check everything
+build() # to build...
+
+Best way is just to do this:
+The following will build and also compress the data, i.e. take about 100mb off the size of the tarball:
+pgeeleher@genemed12:~/Dropbox/HDAC_project_Scripts/r_package_files$ R CMD build --resave-data pRRophetic
