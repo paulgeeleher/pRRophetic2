@@ -7,7 +7,7 @@
 pRRopheticPredict(testMatrix, drug, tissueType = "all", batchCorrect = "eb",
   powerTransformPhenotype = TRUE, removeLowVaryingGenes = 0.2,
   minNumSamples = 10, selection = -1, printOutput = TRUE,
-  removeLowVaringGenesFrom = "homogenizeData")
+  removeLowVaringGenesFrom = "homogenizeData", dataset = "cgp2014")
 }
 \arguments{
 \item{testMatrix}{a gene expression matrix with gene names as row ids and sample names as column ids.}

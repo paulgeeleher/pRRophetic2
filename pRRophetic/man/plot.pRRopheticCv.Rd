@@ -4,7 +4,7 @@
 \alias{plot.pRRopheticCv}
 \title{Plot "pRRopheticCv" object.}
 \usage{
-plot.pRRopheticCv(cvOutData)
+\method{plot}{pRRopheticCv}(cvOutData)
 }
 \arguments{
 \item{cvOutData}{an object of class "pRRopheticCv", i.e. the outpout of the "predictionAccuracyByCv()" function}
