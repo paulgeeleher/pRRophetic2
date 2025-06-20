@@ -309,9 +309,8 @@ When contributing, please ensure:
 This package is licensed under GPL-2. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-
-- Original package developed by Paul Geeleher
-- R 4.0+ compatibility fixes by the Abu Saadat
+- Original package developed by [Paul Geeleher](https://github.com/paulgeeleher)
+- R 4.0+ compatibility fixes by [Abu Saadat](https://github.com/SAADAT-Abu)
 
 ---
 
