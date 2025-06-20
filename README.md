@@ -315,4 +315,4 @@ This package is licensed under GPL-2. See the [LICENSE](LICENSE) file for detail
 
 ---
 
-**Note**: This repository contains the R 4.0+ compatible version of pRRophetic with important bug fixes. The original package may not work correctly with newer R versions.
+**Note**: This repository contains the R 4.0+ compatible version of pRRophetic with some bug fixes. The original package may not work correctly with newer R versions.
