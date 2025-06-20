@@ -12,6 +12,8 @@ pRRophetic is an R package that predicts clinical chemotherapeutic response from
 **⚠️ Important: R 4.0+ Compatibility**  
 This repository contains fixes for R 4.0+ compatibility issues that were present in the original package.
 
+Note that this github repository does not contain the data/ folder for this package because the data is too large to store on GitHub. Thus you cannot build this package from this repository. However the already build .tar.gz file is available for download from https://osf.io/5xvsg. This .tar.gz file will also contain the contents of the data/ folder.
+
 ## Key Features
 
 - **Drug Sensitivity Prediction**: Predict IC50 values for over 130 anti-cancer drugs
@@ -83,14 +85,6 @@ cv_results <- pRRopheticCV(
 summary(cv_results)
 plot(cv_results)
 ```
-
-### Available Drugs
-
-The package supports prediction for 130+ drugs including:
-
-- **Chemotherapy**: Doxorubicin, Cisplatin, Paclitaxel, Etoposide
-- **Targeted Therapy**: Erlotinib, Imatinib, Lapatinib, Sunitinib
-- **Novel Agents**: Bortezomib, Temsirolimus, AZD6244
 
 ```r
 # Check drug distribution normality
@@ -256,62 +250,5 @@ for (drug in drugs) {
 results_matrix <- do.call(cbind, predictions)
 colnames(results_matrix) <- drugs
 ```
-
-## Troubleshooting
-
-### Common Issues
-
-**1. Gene Symbol Mismatches**
-```r
-# Ensure your gene symbols match HGNC official symbols
-# Use org.Hs.eg.db for symbol conversion if needed
-```
-
-**2. Sample Size Warnings**
-```r
-# Minimum 10 samples recommended
-# Increase minNumSamples parameter if needed
-pRRopheticPredict(..., minNumSamples = 5)
-```
-
-**3. Memory Issues with Large Datasets**
-```r
-# For large datasets, consider subsetting or using more memory
-# Increase R memory limit if necessary
-```
-
-### Getting Help
-
-- **Issues**: Report bugs and issues on GitHub
-- **Documentation**: Use `?pRRopheticPredict` for detailed help
-- **Examples**: See the package vignette for comprehensive examples
-
-## Contributing
-
-We welcome contributions! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes (ensure R 4.0+ compatibility)
-4. Add tests if applicable
-5. Submit a pull request
-
-### Development Notes
-
-When contributing, please ensure:
-- All functions work with R 4.0+
-- Use safe type checking (avoid `class(x) == "type"`)
-- Include appropriate error handling
-- Update documentation as needed
-
-## License
-
-This package is licensed under GPL-2. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-- Original package developed by [Paul Geeleher](https://github.com/paulgeeleher)
-- R 4.0+ compatibility fixes by [Abu Saadat](https://github.com/SAADAT-Abu)
-
----
 
 **Note**: This repository contains the R 4.0+ compatible version of pRRophetic with some bug fixes. The original package may not work correctly with newer R versions.
